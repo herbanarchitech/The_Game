@@ -1,13 +1,13 @@
-#backDrop{
-	border:5px solid green;
+#backdrop{
 
+	background-color:black;
 }
 
 #gameScreen{
 
 
-	background-color:black;
 
+	border:5px solid green;
 
 }
 
