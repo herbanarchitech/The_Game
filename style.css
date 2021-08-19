@@ -7,15 +7,18 @@
 
 #backdrop{
 
-	background-color:
+	background:white;
 }
 
 #gameScreen{
 
 
 
-	border:5px solid green;
+	border: 5px solid green;
 	position:absolute;
+	left:0;
+	width:50%;
+	height:50%;
 
 }
 

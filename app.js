@@ -1,13 +1,18 @@
 
 
-	const canvas = document.getElementById("gameScreen") // will using this medium as reference for our game
+	const canvas = document.getElementById('gameScreen'); // will using this medium as reference for our game
 
-	const ctx = canvas.getContext('2d')
+	const ctx = canvas.getContext('2d');
+	console.log(canvas);
 
 	
-	const canvas.width = window.innerWidth;
+	canvas.width = window.innerWidth;
 
-	const canvas.height = window.innerHeight;
+	canvas.height = window.innerHeight;
+
+
+	//canvas.width = 500;
+	//canvas.height = 500;
 
 
 	
@@ -37,18 +42,15 @@
 
 */
 
-	ctx.fillStyle ='red';
 
-	ctx.lineWidth = 5;
 
 	ctx.beginPath();
 
-	ctx.arc(100,50, 0 , Math.PI * 2);
+	ctx.arc(50,50, 30 ,0, Math.PI * 2);
 
 	ctx.closePath();
 	
 	ctx.fill();
-	ctx.stroke();
 
 
 	
