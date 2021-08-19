@@ -1,6 +1,13 @@
+
+#headerOne{
+	color:purple;
+
+
+}
+
 #backdrop{
 
-	background-color:black;
+	background-color:
 }
 
 #gameScreen{
@@ -8,7 +15,9 @@
 
 
 	border:5px solid green;
+	position:absolute;
 
 }
+
 
 
