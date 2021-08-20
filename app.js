@@ -3,7 +3,7 @@
 	const canvas = document.getElementById('gameScreen'); // will using this medium as reference for our game
 
 	const ctx = canvas.getContext('2d');
-	console.log(canvas); // Proof that canvas actually shows up 
+	//console.log(canvas); // Proof that canvas actually shows up 
 
 	
 	canvas.width = window.innerWidth;
@@ -38,12 +38,15 @@
 	];
 
 
+	let score = 0;
+
+	let Navigation = false; // this will be the indicator 
 
 	const drawSnakeAnatomy =(snakePart) => {
 
-		ctx.fillStyle= 'lightgreen'; 
+		ctx.fillStyle= 'green'; 
 
-		ctx.strokeStyle ='darkgreen'; // this propert of canvas will change the color of snakes outline to the indicatied color 
+		ctx.strokeStyle ='black'; // this propert of canvas will change the color of snakes outline to the indicatied color 
 	
 		ctx.fillRect(snakePart.x, snakePart.y, 10, 15); 
 
@@ -60,9 +63,33 @@
 	}
 
 
-	// 
+	// we are going to make this snake 
+
+	const makeSnakeMove =() => {
+		const head = {x : snake[0].x +dx , y:snake[0].y+dy};
 
 	
 
 
+
+	
+	
+
+
 	makeSnake();
+
+
+	python.unshift(head);
+
+	python.pop();
+
+	}
+
+
+	
+	makeSnake();
+
+
+
+
+	
