@@ -45,10 +45,10 @@
 
 		ctx.strokeStyle ='darkgreen'; // this propert of canvas will change the color of snakes outline to the indicatied color 
 	
-		ctx.fillRect(snakePart.x, snakePart.y, 10, 10);
+		ctx.fillRect(snakePart.x, snakePart.y, 10, 15); 
 
 
-		ctx.strokeRect(snakePart.x, snakePart.y, 10, 10);
+		ctx.strokeRect(snakePart.x, snakePart.y, 10,15);
 
 	};
 
@@ -58,6 +58,9 @@
 
 
 	}
+
+
+	// 
 
 	
 
