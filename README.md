@@ -1,5 +1,8 @@
 My objective is to recreate the classic snake game with basic HTMl5 ,CSS , JavaScrpit
 
-![B2F60242-BEB5-4684-B8AD-762F21BC41C7](https://user-images.githubusercontent.com/88554097/130242705-61fc65b8-148a-4dd0-ba52-0ef83b2cf4cd.jpeg)
+![My objective is to recreate the classic snake game with basic HTMl5 ,CSS , JavaScrpit
+
+![8040472C-DE80-4485-BFD8-2A4C1192CEBE](https://user-images.githubusercontent.com/88554097/130244261-bb8376bd-5470-426f-bcb6-d2c9232ac3d5.png)
+
 
 This is the wireset up
