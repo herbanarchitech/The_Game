@@ -3,7 +3,7 @@
 	const canvas = document.getElementById('gameScreen'); // will using this medium as reference for our game
 
 	const ctx = canvas.getContext('2d');
-	console.log(canvas);
+	console.log(canvas); // Proof that canvas actually shows up 
 
 	
 	canvas.width = window.innerWidth;
@@ -11,46 +11,55 @@
 	canvas.height = window.innerHeight;
 
 
-	//canvas.width = 500;
-	//canvas.height = 500;
 
+	//this just to test whether object appears on the canvas 
+	
+	
 
 	
-			
+	//ctx.beginPath();
 
-	//Will be using built in canvas functions to bring the snake life
+	//ctx.arc(280,60, 40 ,2, Math.PI * 0);
 
-/*
+	//ctx.closePath();
+	
+	//ctx.fill();
 
-	const drawSnake = () =>{
-
-		let var canvas = document.getElementById('canvas');
-		if(canvas.getConext) {
-
-			let ctx = canvas.getConText('2d');
-
-			ctx.fillStyle = 'rgb(200,0,0)';
-
-			ctx.fillRect(25,25,100, 100);
+	//
+	
 
 
-		}
+	//this cooridnates will be use to pinpoint the snakes location since canvas uses x,y for positioning 
+	let python = [{x:150,y:150}, 
+		{x:140,y:150}, 
+		{x:130,y:150},
+		{x:120,y:150},
+		{x:110,y:150},
+	];
+
+
+
+	const drawSnakeAnatomy =(snakePart) => {
+
+		ctx.fillStyle= 'lightgreen'; 
+
+		ctx.strokeStyle ='darkgreen'; // this propert of canvas will change the color of snakes outline to the indicatied color 
+	
+		ctx.fillRect(snakePart.x, snakePart.y, 10, 10);
+
+
+		ctx.strokeRect(snakePart.x, snakePart.y, 10, 10);
+
+	};
+
+	const makeSnake = () => {
+
+		python.forEach(drawSnakeAnatomy);
+
 
 	}
 
-
-
-*/
-
-
-
-	ctx.beginPath();
-
-	ctx.arc(50,50, 30 ,0, Math.PI * 2);
-
-	ctx.closePath();
 	
-	ctx.fill();
 
 
-	
+	makeSnake();
